@@ -21,10 +21,6 @@ function addInputDataToLocalStorage(event) {
 }
 
 function onTextAreaInput() {
-  console.log(JSON.parse(localStorage.getItem(storageKey)));
-
-  const localStorageData = JSON.parse(localStorage.getItem(storageKey));
-
   if (localStorageData.message) {
     refs.textarea.value = localStorageData.message;
   }
